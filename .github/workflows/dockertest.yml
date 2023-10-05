@@ -6,7 +6,7 @@ jobs:
     name: measurement-coverage
     steps:
       - name: checkout
-        uses: actions/chekout@v3
+        uses: actions/checkout@v3
       - name: measurement-coverage
         uses: im-sakino-1006/measurement-coverage@main
         with:
