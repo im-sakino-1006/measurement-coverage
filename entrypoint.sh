@@ -1,6 +1,5 @@
 #!/bin/sh -l
-ls -la
-cd ~
+cd root
 ls -la
 pwd
 
