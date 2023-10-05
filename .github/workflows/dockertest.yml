@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  measurement-coverage:
+    runs-on: ubuntu-latest
+    name: measurement-coverage
+    steps:
+      - name: measurement-coverage
+        uses: im-sakino-1006/measurement-coverage@main
+        with:
+          who-to-greet: 'Mona the Octocat'
