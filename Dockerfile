@@ -2,7 +2,7 @@
 FROM openjdk:17-alpine
 
 #RUN apt-get install openjdk-7-jdk
-RUN apk add --no-cache openjdk7=7
+RUN apk add --no-cache openjdk=7
 RUN java --version
 RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip \
  && unzip apache-maven-2.2.1-bin.zip -d /opt/maven
