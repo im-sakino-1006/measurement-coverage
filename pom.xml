@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/2.2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/2.2.1 http://maven.apache.org/maven-v2.2.1.xsd">
+  <modelVersion>2.2.1</modelVersion>
+
+  <groupId>org.sample.maven</groupId>
+  <artifactId>sample-maven</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>7</maven.compiler.source>
+    <maven.compiler.target>7</maven.compiler.target>
+  </properties>
+</project>
