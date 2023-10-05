@@ -11,6 +11,8 @@ RUN wget -q https://github.com/jacoco/jacoco/releases/download/v0.8.10/jacoco-0.
 #RUN mv ${ROOT}/apache-maven-2.2.1-bin /opt/maven/
 #RUN ${ROOT}/apache-maven-2.2.1-bin/bin/mvn --version
 
+cat ~/.bash_profile
+
 COPY entrypoint.sh /entrypoint.sh
 # Change mode これがないとエラーになる
 RUN ["chmod", "+x", "entrypoint.sh"]
