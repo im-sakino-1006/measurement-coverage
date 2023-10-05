@@ -1,6 +1,7 @@
 # Container image that runs your code
 FROM alpine:3.10
 
+RUN apk add coreutils
 RUN apk add openjdk7
 RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip \
  && unzip apache-maven-2.2.1-bin.zip
