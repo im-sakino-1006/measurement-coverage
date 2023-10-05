@@ -9,8 +9,7 @@ RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bi
 # && unzip jacoco-0.8.10.zip
 #RUN ls -la
 #RUN sudo mv ${ROOT}/apache-maven-2.2.1-bin /opt/maven/
-RUN export PATH=$PATH:${ROOT}/apache-maven-2.2.1-bin/bin/mvn
-RUN mvn --version
+RUN ${ROOT}/apache-maven-2.2.1-bin/bin/mvn --version
 COPY entrypoint.sh /entrypoint.sh
 # Change mode これがないとエラーになる
 RUN ["chmod", "+x", "entrypoint.sh"]
