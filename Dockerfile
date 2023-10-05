@@ -9,9 +9,9 @@ RUN apk add openjdk7
 #RUN wget -q https://github.com/jacoco/jacoco/releases/download/v0.8.10/jacoco-0.8.10.zip \
 # && unzip jacoco-0.8.10.zip
 
-RUN java -version
-
-RUN ["chmod", "+x", "entrypoint.sh"]
-
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
+# Change mode
+RUN ["chmod", "+x", "entrypoint.sh"]
+# Code file to execute when the docker container starts up (`entrypoint.sh`)
+ENTRYPOINT ["/entrypoint.sh"]
