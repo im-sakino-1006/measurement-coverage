@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:3.10
+FROM openjdk:7-alpine
 
 RUN apk add openjdk7
 RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip \
