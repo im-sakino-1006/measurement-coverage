@@ -7,7 +7,8 @@ RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bi
 #RUN wget -q https://github.com/jacoco/jacoco/releases/download/v0.8.10/jacoco-0.8.10.zip \
 # && unzip jacoco-0.8.10.zip
 RUN ls -la
-RUN cd ./apache-maven-2.2.1-bin
+#RUN cd opt
+RUN cd apache-maven-2.2.1-bin
 #RUN sudo mv ./apache-maven-2.2.1-bin /opt/maven
 RUN export PATH=$PATH:/opt/maven/bin/mvn
 
