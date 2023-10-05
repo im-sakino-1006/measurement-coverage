@@ -1,5 +1,5 @@
 #!/bin/sh -l
-cd root
+sudo cd root
 ls -la
 pwd
 
