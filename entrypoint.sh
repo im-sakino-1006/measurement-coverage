@@ -1,4 +1,9 @@
 #!/bin/sh -l
+ls -la
+
+pwd
+
+mvn --version
 
 echo "Hello $1"
 time=$(date)
