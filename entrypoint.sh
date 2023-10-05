@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 
-find -name "apache-maven-2.2.1"
+echo `find -name "apache-maven-2.2.1"`
 #mvn --version
 
 echo "Hello $1"
