@@ -2,16 +2,14 @@
 FROM alpine:3.10
 
 RUN apk add openjdk7
-
-#RUN wget -q https://github.com/apache/maven/archive/refs/tags/maven-2.2.1.zip \
-# && unzip maven-2.2.1.zip
-
+RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip \
+ && unzip apache-maven-2.2.1-bin.zip
+RUN pwd
+RUN ${HOME}
 #RUN wget -q https://github.com/jacoco/jacoco/releases/download/v0.8.10/jacoco-0.8.10.zip \
 # && unzip jacoco-0.8.10.zip
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
-# Change mode
+# Change mode これがないとエラーになる
 RUN ["chmod", "+x", "entrypoint.sh"]
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
