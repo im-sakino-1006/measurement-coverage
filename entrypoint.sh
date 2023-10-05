@@ -1,3 +1,3 @@
 #!/bin/sh
-cd /opt/maven/apache-maven-2.2.1/bin/mvn
-ls -la
+cd /opt/maven/apache-maven-2.2.1/bin
+mvn
