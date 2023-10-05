@@ -1,8 +1,7 @@
 #!/bin/sh -l
-cd ./127
-ls -la
-pwd
 
+
+find -name "apache-maven-2.2.1"
 #mvn --version
 
 echo "Hello $1"
