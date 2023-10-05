@@ -2,7 +2,6 @@
 FROM openjdk:17-alpine
 
 RUN apk add --no-cache openjdk7
-RUN yum search openjdk
 RUN java --version
 RUN wget -q https://archive.apache.org/dist/maven/binaries/apache-maven-2.2.1-bin.zip \
  && unzip apache-maven-2.2.1-bin.zip -d /opt/maven
